@@ -190,12 +190,6 @@
                                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IVI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-jv-IpG">
-                                                                <rect key="frame" x="12" y="126" width="19" height="20"/>
-                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="STA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TPG-F4-tE0">
                                                                 <rect key="frame" x="94" y="126" width="29" height="20"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -233,7 +227,7 @@
                                                                 <textInputTraits key="textInputTraits"/>
                                                             </textField>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0cv-AK-oMi" userLabel="txtIVI">
-                                                                <rect key="frame" x="35" y="121" width="51" height="30"/>
+                                                                <rect key="frame" x="43" y="121" width="43" height="30"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
@@ -377,6 +371,12 @@
                                                                     <constraint firstItem="tMX-k6-s8o" firstAttribute="leading" secondItem="WG1-Hr-cos" secondAttribute="trailing" multiplier="20:300" id="zXI-IU-EIg"/>
                                                                 </constraints>
                                                             </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LVL" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UwV-jv-IpG">
+                                                                <rect key="frame" x="12" y="126" width="27" height="20"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
                                                         </subviews>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <constraints>
