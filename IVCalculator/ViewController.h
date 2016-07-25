@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UIButton *btnPokemon;
 @property (strong, nonatomic) IBOutlet UITextField *txtCP;
@@ -22,6 +22,10 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtATT;
 @property (strong, nonatomic) IBOutlet UITextField *txtDEF;
 
+@property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
+
+
+- (IBAction)onPokemon:(id)sender;
 
 @end
 
