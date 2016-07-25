@@ -14,9 +14,13 @@
 		3024F5DD1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3024F5DB1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld */; };
 		3024F5DF1D459CBB009CC9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5DE1D459CBB009CC9A0 /* Assets.xcassets */; };
 		3024F5E21D459CBB009CC9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5E01D459CBB009CC9A0 /* LaunchScreen.storyboard */; };
+		3024F5EA1D45AFFB009CC9A0 /* pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5E91D45AFFB009CC9A0 /* pokemon.plist */; };
+		30EA2C021D45C65D00878C53 /* dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 30EA2C011D45C65D00878C53 /* dropdown.png */; };
+		464A3914BA0B757F210F2C69 /* libPods-IVCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B04916032E4719EF3AE5E7 /* libPods-IVCalculator.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12B04916032E4719EF3AE5E7 /* libPods-IVCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3024F5CC1D459CBB009CC9A0 /* IVCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IVCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3024F5D01D459CBB009CC9A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3024F5D21D459CBB009CC9A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +32,10 @@
 		3024F5DE1D459CBB009CC9A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3024F5E11D459CBB009CC9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3024F5E31D459CBB009CC9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3024F5E91D45AFFB009CC9A0 /* pokemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokemon.plist; sourceTree = "<group>"; };
+		30EA2C011D45C65D00878C53 /* dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdown.png; sourceTree = "<group>"; };
+		53AFFB0D01C9712DA2D919B8 /* Pods-IVCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		7B62D7440CED4979916DA0FA /* Pods-IVCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				464A3914BA0B757F210F2C69 /* libPods-IVCalculator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +55,8 @@
 			children = (
 				3024F5CE1D459CBB009CC9A0 /* IVCalculator */,
 				3024F5CD1D459CBB009CC9A0 /* Products */,
+				D4E44D22A823878D045A59B8 /* Pods */,
+				741CDAB5902CDDCADC5C6020 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +71,7 @@
 		3024F5CE1D459CBB009CC9A0 /* IVCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				30EA2C011D45C65D00878C53 /* dropdown.png */,
 				3024F5D21D459CBB009CC9A0 /* AppDelegate.h */,
 				3024F5D31D459CBB009CC9A0 /* AppDelegate.m */,
 				3024F5D51D459CBB009CC9A0 /* ViewController.h */,
@@ -70,6 +82,7 @@
 				3024F5E31D459CBB009CC9A0 /* Info.plist */,
 				3024F5DB1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld */,
 				3024F5CF1D459CBB009CC9A0 /* Supporting Files */,
+				3024F5E91D45AFFB009CC9A0 /* pokemon.plist */,
 			);
 			path = IVCalculator;
 			sourceTree = "<group>";
@@ -82,6 +95,23 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		741CDAB5902CDDCADC5C6020 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12B04916032E4719EF3AE5E7 /* libPods-IVCalculator.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4E44D22A823878D045A59B8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53AFFB0D01C9712DA2D919B8 /* Pods-IVCalculator.debug.xcconfig */,
+				7B62D7440CED4979916DA0FA /* Pods-IVCalculator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3024F5E61D459CBB009CC9A0 /* Build configuration list for PBXNativeTarget "IVCalculator" */;
 			buildPhases = (
+				3ABD0261D58631DA7DD8A405 /* [CP] Check Pods Manifest.lock */,
 				3024F5C81D459CBB009CC9A0 /* Sources */,
 				3024F5C91D459CBB009CC9A0 /* Frameworks */,
 				3024F5CA1D459CBB009CC9A0 /* Resources */,
+				F54103258203CC97A2DF6E45 /* [CP] Embed Pods Frameworks */,
+				8A3803052D7FDBBD081EA050 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -139,6 +172,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30EA2C021D45C65D00878C53 /* dropdown.png in Resources */,
+				3024F5EA1D45AFFB009CC9A0 /* pokemon.plist in Resources */,
 				3024F5E21D459CBB009CC9A0 /* LaunchScreen.storyboard in Resources */,
 				3024F5DF1D459CBB009CC9A0 /* Assets.xcassets in Resources */,
 				3024F5DA1D459CBB009CC9A0 /* Main.storyboard in Resources */,
@@ -146,6 +181,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3ABD0261D58631DA7DD8A405 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8A3803052D7FDBBD081EA050 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F54103258203CC97A2DF6E45 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3024F5C81D459CBB009CC9A0 /* Sources */ = {
@@ -267,9 +350,11 @@
 		};
 		3024F5E71D459CBB009CC9A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53AFFB0D01C9712DA2D919B8 /* Pods-IVCalculator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IVCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.IVCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,9 +363,11 @@
 		};
 		3024F5E81D459CBB009CC9A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B62D7440CED4979916DA0FA /* Pods-IVCalculator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = IVCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dev.IVCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -306,6 +393,7 @@
 				3024F5E81D459CBB009CC9A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

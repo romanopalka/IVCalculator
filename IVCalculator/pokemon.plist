@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>pokemons</key>
+	<array>
+		<string>Abra</string>
+		<string>Bellsprout</string>
+		<string>Bulbasaur</string>
+		<string>Caterpie</string>
+		<string>Charmander</string>
+		<string>Clefairy</string>
+		<string>Cubone</string>
+		<string>Diglett</string>
+		<string>Doduo</string>
+		<string>Dratini</string>
+		<string>Drowzee</string>
+		<string>Eevee</string>
+		<string>Ekans</string>
+		<string>Exeggcute</string>
+		<string>Gastly</string>
+		<string>Geodude</string>
+		<string>Goldeen</string>
+		<string>Grimer</string>
+		<string>Growlithe</string>
+		<string>Horsea</string>
+		<string>Kabuto</string>
+		<string>Koffing</string>
+		<string>Krabby</string>
+		<string>Machop</string>
+		<string>Magikarp</string>
+		<string>Magnemite</string>
+		<string>Mankey</string>
+		<string>Meowth</string>
+		<string>Nidoran (female)</string>
+		<string>Nidoran (male)</string>
+		<string>Oddish</string>
+		<string>Omanyte</string>
+		<string>Paras</string>
+		<string>Pidgey</string>
+		<string>Pikachu</string>
+		<string>Poliwag</string>
+		<string>Ponyta</string>
+		<string>Psyduck</string>
+		<string>Rattata</string>
+		<string>Rhyhorn</string>
+		<string>Sandshrew</string>
+		<string>Seel</string>
+		<string>Shellder</string>
+		<string>Slowpoke</string>
+		<string>Spearow</string>
+		<string>Squirtle</string>
+		<string>Staryu</string>
+		<string>Tentacool</string>
+		<string>Venonant</string>
+		<string>Voltorb</string>
+		<string>Vulpix</string>
+		<string>Weedle</string>
+		<string>Zubat</string>
+	</array>
+</dict>
+</plist>

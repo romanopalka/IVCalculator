@@ -10,6 +10,18 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UIButton *btnPokemon;
+@property (strong, nonatomic) IBOutlet UITextField *txtCP;
+@property (strong, nonatomic) IBOutlet UITextField *txtHP;
+@property (strong, nonatomic) IBOutlet UITextField *txtDustPrice;
+
+@property (strong, nonatomic) IBOutlet UITextField *txtPerfectCP;
+@property (strong, nonatomic) IBOutlet UITextField *txtPerfectHP;
+@property (strong, nonatomic) IBOutlet UITextField *txtIVI;
+@property (strong, nonatomic) IBOutlet UITextField *txtSTA;
+@property (strong, nonatomic) IBOutlet UITextField *txtATT;
+@property (strong, nonatomic) IBOutlet UITextField *txtDEF;
+
 
 @end
 
