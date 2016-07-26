@@ -13,7 +13,7 @@
     
 }
 @property (strong, nonatomic) NSMutableArray *arrBaseStats;
-@property (strong, nonatomic) NSMutableArray *arrPokemons;
+@property (strong, nonatomic) NSArray *arrPokemons;
 @property (strong, nonatomic) NSMutableArray *arrLevels;
 @property (strong, nonatomic) NSMutableArray *arrStardust;
 

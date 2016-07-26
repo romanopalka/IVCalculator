@@ -24,7 +24,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     arrBaseStats = [[NSMutableArray alloc] init];
-    arrPokemons = [[NSMutableArray alloc] init];
+    arrPokemons = [[NSArray alloc] init];
     arrLevels = [[NSMutableArray alloc] init];
     arrStardust = [[NSMutableArray alloc] init];
     
@@ -38,10 +38,13 @@
     NSMutableDictionary *dicData = [[NSMutableDictionary alloc] initWithContentsOfFile:strDataPath];
     
     arrBaseStats = [dicData objectForKey:@"baseStats"];
+    
+    NSMutableArray *arrTmpPokemons = [[NSMutableArray alloc] init];
     for (NSMutableDictionary *dicBaseStats in arrBaseStats) {
-        [arrPokemons addObject:[dicBaseStats valueForKey:@"pokemon"]];
+        [arrTmpPokemons addObject:[dicBaseStats valueForKey:@"pokemon"]];
     }
     
+    arrPokemons = [arrTmpPokemons sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     NSMutableArray *arrLevelsByStardust = [dicData objectForKey:@"levelsByStardust"];
     
@@ -100,16 +103,21 @@
     
     [ActionSheetStringPicker showPickerWithTitle:@"Pokemon" rows:arrPokemons initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
         
-        NSMutableDictionary *dicData = arrBaseStats[selectedIndex];
-        NSString *strPokemon = [dicData valueForKey:@"pokemon"];
-        NSString *strAttack = [dicData valueForKey:@"attack"];
-        NSString *strDefense = [dicData valueForKey:@"defense"];
-        NSString *strStamina = [dicData valueForKey:@"stamina"];
-        
-        self.txtPokemon.text = strPokemon;
-        self.txtSTA.text = strStamina;
-        self.txtATT.text = strAttack;
-        self.txtDEF.text = strDefense;
+        for (NSMutableDictionary *dicData in arrBaseStats) {
+            NSString *strPokemon = [dicData valueForKey:@"pokemon"];
+            if ([strPokemon isEqualToString:arrPokemons[selectedIndex]]) {
+                NSString *strAttack = [dicData valueForKey:@"attack"];
+                NSString *strDefense = [dicData valueForKey:@"defense"];
+                NSString *strStamina = [dicData valueForKey:@"stamina"];
+                
+                self.txtPokemon.text = strPokemon;
+                self.txtSTA.text = strStamina;
+                self.txtATT.text = strAttack;
+                self.txtDEF.text = strDefense;
+                
+                break;
+            }
+        }
         
     } cancelBlock:^(ActionSheetStringPicker *picker) {
         
