@@ -16,6 +16,7 @@
 @property (strong, nonatomic) NSArray *arrPokemons;
 @property (strong, nonatomic) NSMutableArray *arrLevels;
 @property (strong, nonatomic) NSMutableArray *arrStardust;
+@property (strong, nonatomic) NSMutableArray *arrEvolutions;
 
 
 @property (strong, nonatomic) IBOutlet UITextField *txtPokemon;
@@ -29,6 +30,17 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtSTA;
 @property (strong, nonatomic) IBOutlet UITextField *txtATT;
 @property (strong, nonatomic) IBOutlet UITextField *txtDEF;
+
+@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName1;
+@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName2;
+@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName3;
+
+@property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange1;
+@property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange2;
+@property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange3;
+
+
+
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 

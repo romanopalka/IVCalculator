@@ -18,6 +18,7 @@
 @synthesize arrPokemons;
 @synthesize arrLevels;
 @synthesize arrStardust;
+@synthesize arrEvolutions;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -27,6 +28,7 @@
     arrPokemons = [[NSArray alloc] init];
     arrLevels = [[NSMutableArray alloc] init];
     arrStardust = [[NSMutableArray alloc] init];
+    arrEvolutions = [[NSMutableArray alloc] init];
     
     [self initBaseData];
     
@@ -37,6 +39,7 @@
     NSString *strDataPath = [[NSBundle mainBundle] pathForResource:@"pokemon" ofType:@"plist"];
     NSMutableDictionary *dicData = [[NSMutableDictionary alloc] initWithContentsOfFile:strDataPath];
     
+    arrEvolutions = [dicData objectForKey:@"evolutions"];
     arrBaseStats = [dicData objectForKey:@"baseStats"];
     
     NSMutableArray *arrTmpPokemons = [[NSMutableArray alloc] init];
@@ -140,6 +143,52 @@
 }
 
 - (IBAction)onCalc:(id)sender {
+    NSString *strCP = self.txtCP.text;
+    if ([strCP isEqual:@""]) {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"Please input CP." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+        return;
+    }
+    int cp = [strCP intValue];
+    
+    for (NSMutableDictionary *dicEvolution in arrEvolutions) {
+        NSString *strPokemonName = [dicEvolution valueForKey:@"pokemon"];
+        if ([strPokemonName isEqualToString:self.txtPokemon.text]) {
+            NSDictionary *dicYellowEvolution = [dicEvolution objectForKey:@"yellowEvolution"];
+            if (dicYellowEvolution)
+            {
+                NSString *strYellowName = [dicYellowEvolution valueForKey:@"name"];
+                float multiplierMin = [[dicYellowEvolution valueForKey:@"min"] floatValue];
+                float multiplierMax = [[dicYellowEvolution valueForKey:@"max"] floatValue];
+                int yellowRangeMin = cp * multiplierMin;
+                int yellowRangeMax = cp * multiplierMax;
+                NSString *strYellowRange = [NSString stringWithFormat:@"%d~%d", yellowRangeMin, yellowRangeMax];
+                
+                self.lblEvolutionName1.text = strYellowName;
+                self.txtEvolutionRange1.text = strYellowRange;
+                
+            }
+            NSDictionary *dicRedEvolution = [dicEvolution objectForKey:@"redEvolution"];
+            if (dicRedEvolution)
+            {
+                NSString *strRedName = [dicRedEvolution valueForKey:@"name"];
+                float multiplierMin = [[dicRedEvolution valueForKey:@"min"] floatValue];
+                float multiplierMax = [[dicRedEvolution valueForKey:@"max"] floatValue];
+                int redRangeMin = cp * multiplierMin;
+                int redRangeMax = cp * multiplierMax;
+                NSString *strRedRange = [NSString stringWithFormat:@"%d~%d", redRangeMin, redRangeMax];
+                
+                self.lblEvolutionName2.text = strRedName;
+                self.txtEvolutionRange2.text = strRedRange;
+                
+            }
+            
+            
+        }
+    }
+    
+    
+    
     
 }
 
