@@ -2,158 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>evolutions</key>
-	<array>
-		<dict>
-			<key>pokemon</key>
-			<string>Abra</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Kadabra</string>
-				<key>min</key>
-				<real>1.36</real>
-				<key>max</key>
-				<real>1.95</real>
-			</dict>
-			<key>redEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Alakazam</string>
-				<key>min</key>
-				<real>1.4</real>
-				<key>max</key>
-				<real>1.65</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Bellsprout</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Weepinbell</string>
-				<key>min</key>
-				<real>1.54</real>
-				<key>max</key>
-				<real>1.6</real>
-			</dict>
-			<key>redEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Victreebel</string>
-				<key>min</key>
-				<real>1.47</real>
-				<key>max</key>
-				<real>1.59</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Bulbasaur</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Ivysaur</string>
-				<key>min</key>
-				<real>1.53</real>
-				<key>max</key>
-				<real>1.58</real>
-			</dict>
-			<key>redEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Venusaur</string>
-				<key>min</key>
-				<real>1.2</real>
-				<key>max</key>
-				<real>1.6</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Caterpie</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Metapod</string>
-				<key>min</key>
-				<real>1.04</real>
-				<key>max</key>
-				<real>1.08</real>
-			</dict>
-			<key>redEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Butterfree</string>
-				<key>min</key>
-				<real>3.55</real>
-				<key>max</key>
-				<real>3.79</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Charmander</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Charmeleon</string>
-				<key>min</key>
-				<real>1.64</real>
-				<key>max</key>
-				<real>1.7</real>
-			</dict>
-			<key>redEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Charizard</string>
-				<key>min</key>
-				<real>1.71</real>
-				<key>max</key>
-				<real>1.79</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Clefairy</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Clefable</string>
-				<key>min</key>
-				<real>2.03</real>
-				<key>max</key>
-				<real>2.14</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Cubone</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Marowak</string>
-				<key>min</key>
-				<real>1.65</real>
-				<key>max</key>
-				<real>1.67</real>
-			</dict>
-		</dict>
-		<dict>
-			<key>pokemon</key>
-			<string>Diglett</string>
-			<key>yellowEvolution</key>
-			<dict>
-				<key>name</key>
-				<string>Dugtrio</string>
-				<key>min</key>
-				<real>2.68</real>
-				<key>max</key>
-				<real>2.77</real>
-			</dict>
-		</dict>
-	</array>
 	<key>levelsByStardust</key>
 	<array>
 		<dict>
@@ -277,7 +125,7 @@
 			<string>10000</string>
 		</dict>
 	</array>
-	<key>baseStats</key>
+	<key>baseData</key>
 	<array>
 		<dict>
 			<key>pokemon</key>
@@ -288,6 +136,17 @@
 			<string>126</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Ivysaur</string>
+					<key>min</key>
+					<real>1.53</real>
+					<key>max</key>
+					<real>1.58</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -298,6 +157,17 @@
 			<string>158</string>
 			<key>stamina</key>
 			<string>120</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Venusaur</string>
+					<key>min</key>
+					<real>1.2</real>
+					<key>max</key>
+					<real>1.6</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -318,6 +188,17 @@
 			<string>108</string>
 			<key>stamina</key>
 			<string>78</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Charmeleon</string>
+					<key>min</key>
+					<real>1.64</real>
+					<key>max</key>
+					<real>1.7</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -328,6 +209,17 @@
 			<string>140</string>
 			<key>stamina</key>
 			<string>116</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Charizard</string>
+					<key>min</key>
+					<real>1.71</real>
+					<key>max</key>
+					<real>1.79</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -348,6 +240,17 @@
 			<string>142</string>
 			<key>stamina</key>
 			<string>88</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Wartortle</string>
+					<key>min</key>
+					<real>1.63</real>
+					<key>max</key>
+					<real>2.1</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -358,6 +261,17 @@
 			<string>176</string>
 			<key>stamina</key>
 			<string>118</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Blastoise</string>
+					<key>min</key>
+					<real>1.4</real>
+					<key>max</key>
+					<real>1.65</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -378,6 +292,17 @@
 			<string>66</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Metapod</string>
+					<key>min</key>
+					<real>1.04</real>
+					<key>max</key>
+					<real>1.08</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -388,6 +313,17 @@
 			<string>86</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Butterfree</string>
+					<key>min</key>
+					<real>3.55</real>
+					<key>max</key>
+					<real>3.79</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -408,6 +344,17 @@
 			<string>64</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Kakuna</string>
+					<key>min</key>
+					<real>1.06</real>
+					<key>max</key>
+					<real>1.1</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -418,6 +365,17 @@
 			<string>82</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Beedrill</string>
+					<key>min</key>
+					<real>3.01</real>
+					<key>max</key>
+					<real>3.42</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -438,6 +396,17 @@
 			<string>90</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Pidgeotto</string>
+					<key>min</key>
+					<real>1.71</real>
+					<key>max</key>
+					<real>1.95</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -448,6 +417,17 @@
 			<string>122</string>
 			<key>stamina</key>
 			<string>126</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Pidgeot</string>
+					<key>min</key>
+					<real>1.73</real>
+					<key>max</key>
+					<real>1.78</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -468,6 +448,17 @@
 			<string>86</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Raticate</string>
+					<key>min</key>
+					<real>2.55</real>
+					<key>max</key>
+					<real>2.73</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -488,6 +479,17 @@
 			<string>78</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Fearow</string>
+					<key>min</key>
+					<real>2.58</real>
+					<key>max</key>
+					<real>2.81</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -508,6 +510,17 @@
 			<string>112</string>
 			<key>stamina</key>
 			<string>70</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Arbok</string>
+					<key>min</key>
+					<real>2.21</real>
+					<key>max</key>
+					<real>2.27</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -528,6 +541,17 @@
 			<string>108</string>
 			<key>stamina</key>
 			<string>70</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Raichu</string>
+					<key>min</key>
+					<real>2.33</real>
+					<key>max</key>
+					<real>2.38</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -541,13 +565,24 @@
 		</dict>
 		<dict>
 			<key>pokemon</key>
-			<string>Sanshrew</string>
+			<string>Sandshrew</string>
 			<key>attack</key>
 			<string>90</string>
 			<key>defense</key>
 			<string>114</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Sandslash</string>
+					<key>min</key>
+					<real>2.35</real>
+					<key>max</key>
+					<real>2.76</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -568,6 +603,17 @@
 			<string>104</string>
 			<key>stamina</key>
 			<string>110</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Nidorina</string>
+					<key>min</key>
+					<real>1.63</real>
+					<key>max</key>
+					<real>2.48</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -578,6 +624,17 @@
 			<string>136</string>
 			<key>stamina</key>
 			<string>140</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Nidoqueen</string>
+					<key>min</key>
+					<real>1.83</real>
+					<key>max</key>
+					<real>2.48</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -598,6 +655,17 @@
 			<string>94</string>
 			<key>stamina</key>
 			<string>92</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Nidorino</string>
+					<key>min</key>
+					<real>1.64</real>
+					<key>max</key>
+					<real>1.7</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -608,6 +676,17 @@
 			<string>128</string>
 			<key>stamina</key>
 			<string>122</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Nidoking</string>
+					<key>min</key>
+					<real>1.64</real>
+					<key>max</key>
+					<real>1.86</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -628,6 +707,17 @@
 			<string>124</string>
 			<key>stamina</key>
 			<string>140</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Clefable</string>
+					<key>min</key>
+					<real>2.03</real>
+					<key>max</key>
+					<real>2.14</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -648,6 +738,17 @@
 			<string>118</string>
 			<key>stamina</key>
 			<string>76</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Ninetales</string>
+					<key>min</key>
+					<real>2.74</real>
+					<key>max</key>
+					<real>2.81</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -688,6 +789,17 @@
 			<string>90</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Golbat</string>
+					<key>min</key>
+					<real>2.6</real>
+					<key>max</key>
+					<real>3.67</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -708,6 +820,17 @@
 			<string>130</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Gloom</string>
+					<key>min</key>
+					<real>1.48</real>
+					<key>max</key>
+					<real>1.51</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -718,6 +841,17 @@
 			<string>158</string>
 			<key>stamina</key>
 			<string>120</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Vileplume</string>
+					<key>min</key>
+					<real>1.48</real>
+					<key>max</key>
+					<real>1.53</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -738,10 +872,21 @@
 			<string>120</string>
 			<key>stamina</key>
 			<string>70</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Parasect</string>
+					<key>min</key>
+					<real>1.92</real>
+					<key>max</key>
+					<real>2.02</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
-			<string>Paraset</string>
+			<string>Parasect</string>
 			<key>attack</key>
 			<string>162</string>
 			<key>defense</key>
@@ -758,6 +903,17 @@
 			<string>118</string>
 			<key>stamina</key>
 			<string>120</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Venomoth</string>
+					<key>min</key>
+					<real>1.86</real>
+					<key>max</key>
+					<real>1.9</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -778,6 +934,17 @@
 			<string>86</string>
 			<key>stamina</key>
 			<string>20</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Dugtrio</string>
+					<key>min</key>
+					<real>2.68</real>
+					<key>max</key>
+					<real>2.77</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -798,6 +965,17 @@
 			<string>94</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Persian</string>
+					<key>min</key>
+					<real>1.98</real>
+					<key>max</key>
+					<real>2.24</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -818,6 +996,17 @@
 			<string>112</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Golduck</string>
+					<key>min</key>
+					<real>2.22</real>
+					<key>max</key>
+					<real>2.29</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -838,6 +1027,17 @@
 			<string>96</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Primeape</string>
+					<key>min</key>
+					<real>2.17</real>
+					<key>max</key>
+					<real>2.28</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -858,6 +1058,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>110</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Arcanine</string>
+					<key>min</key>
+					<real>2.31</real>
+					<key>max</key>
+					<real>2.36</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -878,6 +1089,17 @@
 			<string>98</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Poliwhirl</string>
+					<key>min</key>
+					<real>1.72</real>
+					<key>max</key>
+					<real>1.73</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -888,6 +1110,17 @@
 			<string>132</string>
 			<key>stamina</key>
 			<string>130</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Poliwrath</string>
+					<key>min</key>
+					<real>1.9</real>
+					<key>max</key>
+					<real>1.96</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -908,6 +1141,17 @@
 			<string>76</string>
 			<key>stamina</key>
 			<string>50</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Kadabra</string>
+					<key>min</key>
+					<real>1.36</real>
+					<key>max</key>
+					<real>1.95</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -918,6 +1162,17 @@
 			<string>112</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Alakazam</string>
+					<key>min</key>
+					<real>1.4</real>
+					<key>max</key>
+					<real>1.65</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -938,6 +1193,17 @@
 			<string>96</string>
 			<key>stamina</key>
 			<string>140</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Machoke</string>
+					<key>min</key>
+					<real>1.62</real>
+					<key>max</key>
+					<real>1.67</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -948,6 +1214,17 @@
 			<string>144</string>
 			<key>stamina</key>
 			<string>160</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Machamp</string>
+					<key>min</key>
+					<real>1.48</real>
+					<key>max</key>
+					<real>1.7</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -968,6 +1245,17 @@
 			<string>78</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Weepinbell</string>
+					<key>min</key>
+					<real>1.54</real>
+					<key>max</key>
+					<real>1.6</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -978,6 +1266,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>130</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Victreebel</string>
+					<key>min</key>
+					<real>1.47</real>
+					<key>max</key>
+					<real>1.59</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -998,6 +1297,17 @@
 			<string>136</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Tentacruel</string>
+					<key>min</key>
+					<real>2.47</real>
+					<key>max</key>
+					<real>2.6</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1018,6 +1328,17 @@
 			<string>118</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Graveler</string>
+					<key>min</key>
+					<real>1.75</real>
+					<key>max</key>
+					<real>1.76</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1028,6 +1349,17 @@
 			<string>156</string>
 			<key>stamina</key>
 			<string>110</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Golem</string>
+					<key>min</key>
+					<real>1.64</real>
+					<key>max</key>
+					<real>1.72</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1048,6 +1380,17 @@
 			<string>138</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Rapidash</string>
+					<key>min</key>
+					<real>1.48</real>
+					<key>max</key>
+					<real>1.5</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1068,6 +1411,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>180</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Slowbro</string>
+					<key>min</key>
+					<real>2.19</real>
+					<key>max</key>
+					<real>2.21</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1088,6 +1442,17 @@
 			<string>138</string>
 			<key>stamina</key>
 			<string>50</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Magneton</string>
+					<key>min</key>
+					<real>2.16</real>
+					<key>max</key>
+					<real>2.17</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1118,6 +1483,17 @@
 			<string>96</string>
 			<key>stamina</key>
 			<string>70</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Dodrio</string>
+					<key>min</key>
+					<real>2.19</real>
+					<key>max</key>
+					<real>2.24</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1138,6 +1514,17 @@
 			<string>138</string>
 			<key>stamina</key>
 			<string>130</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Dewgong</string>
+					<key>min</key>
+					<real>1.04</real>
+					<key>max</key>
+					<real>1.96</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1158,6 +1545,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>160</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Muk</string>
+					<key>min</key>
+					<real>2.01</real>
+					<key>max</key>
+					<real>2.44</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1178,6 +1576,17 @@
 			<string>112</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Cloyster</string>
+					<key>min</key>
+					<real>2.62</real>
+					<key>max</key>
+					<real>2.65</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1198,6 +1607,17 @@
 			<string>82</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Haunter</string>
+					<key>min</key>
+					<real>1.75</real>
+					<key>max</key>
+					<real>1.83</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1208,6 +1628,17 @@
 			<string>118</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Gengar</string>
+					<key>min</key>
+					<real>1.56</real>
+					<key>max</key>
+					<real>1.8</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1238,6 +1669,17 @@
 			<string>140</string>
 			<key>stamina</key>
 			<string>120</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Hypno</string>
+					<key>min</key>
+					<real>2.08</real>
+					<key>max</key>
+					<real>2.09</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1258,6 +1700,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Kingler</string>
+					<key>min</key>
+					<real>2.36</real>
+					<key>max</key>
+					<real>2.4</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1278,6 +1731,17 @@
 			<string>124</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Electrode</string>
+					<key>min</key>
+					<real>2.01</real>
+					<key>max</key>
+					<real>2.02</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1298,6 +1762,17 @@
 			<string>132</string>
 			<key>stamina</key>
 			<string>120</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Exeggutor</string>
+					<key>min</key>
+					<real>2.7</real>
+					<key>max</key>
+					<real>3.18</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1318,6 +1793,17 @@
 			<string>150</string>
 			<key>stamina</key>
 			<string>100</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Marowak</string>
+					<key>min</key>
+					<real>1.65</real>
+					<key>max</key>
+					<real>1.67</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1368,6 +1854,17 @@
 			<string>142</string>
 			<key>stamina</key>
 			<string>80</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Weezing</string>
+					<key>min</key>
+					<real>1.95</real>
+					<key>max</key>
+					<real>2.025</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1388,6 +1885,17 @@
 			<string>116</string>
 			<key>stamina</key>
 			<string>160</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Rhydon</string>
+					<key>min</key>
+					<real>1.9</real>
+					<key>max</key>
+					<real>1.91</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1438,6 +1946,17 @@
 			<string>100</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Seadra</string>
+					<key>min</key>
+					<real>2.19</real>
+					<key>max</key>
+					<real>2.23</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1458,6 +1977,17 @@
 			<string>126</string>
 			<key>stamina</key>
 			<string>90</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Seaking</string>
+					<key>min</key>
+					<real>2.14</real>
+					<key>max</key>
+					<real>2.24</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1478,6 +2008,17 @@
 			<string>128</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Starmie</string>
+					<key>min</key>
+					<real>2.38</real>
+					<key>max</key>
+					<real>2.41</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1568,6 +2109,17 @@
 			<string>84</string>
 			<key>stamina</key>
 			<string>40</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Gyarados</string>
+					<key>min</key>
+					<real>10.1</real>
+					<key>max</key>
+					<real>11.8</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1608,6 +2160,33 @@
 			<string>128</string>
 			<key>stamina</key>
 			<string>110</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Jolteon</string>
+					<key>min</key>
+					<real>2.02</real>
+					<key>max</key>
+					<real>2.1</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Flareon</string>
+					<key>min</key>
+					<real>2.47</real>
+					<key>max</key>
+					<real>2.48</real>
+				</dict>
+				<dict>
+					<key>name</key>
+					<string>Vaporeon</string>
+					<key>min</key>
+					<real>2.63</real>
+					<key>max</key>
+					<real>2.64</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1658,6 +2237,17 @@
 			<string>160</string>
 			<key>stamina</key>
 			<string>70</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Omastar</string>
+					<key>min</key>
+					<real>1.99</real>
+					<key>max</key>
+					<real>2.12</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1678,6 +2268,17 @@
 			<string>142</string>
 			<key>stamina</key>
 			<string>60</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Kabutops</string>
+					<key>min</key>
+					<real>1.97</real>
+					<key>max</key>
+					<real>2.37</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1748,6 +2349,17 @@
 			<string>110</string>
 			<key>stamina</key>
 			<string>82</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Dragonair</string>
+					<key>min</key>
+					<real>1.8</real>
+					<key>max</key>
+					<real>2.94</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
@@ -1758,6 +2370,17 @@
 			<string>152</string>
 			<key>stamina</key>
 			<string>122</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Dragonite</string>
+					<key>min</key>
+					<real>2.03</real>
+					<key>max</key>
+					<real>2.08</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>

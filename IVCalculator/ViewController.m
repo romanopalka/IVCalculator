@@ -14,21 +14,21 @@
 @end
 
 @implementation ViewController
-@synthesize arrBaseStats;
-@synthesize arrPokemons;
-@synthesize arrLevels;
-@synthesize arrStardust;
-@synthesize arrEvolutions;
+@synthesize mArrBaseData;
+@synthesize mArrPokemons;
+@synthesize mArrLevels;
+@synthesize mArrStardust;
+@synthesize mArrEvolutions;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    arrBaseStats = [[NSMutableArray alloc] init];
-    arrPokemons = [[NSArray alloc] init];
-    arrLevels = [[NSMutableArray alloc] init];
-    arrStardust = [[NSMutableArray alloc] init];
-    arrEvolutions = [[NSMutableArray alloc] init];
+    mArrBaseData = [[NSMutableArray alloc] init];
+    mArrPokemons = [[NSArray alloc] init];
+    mArrLevels = [[NSMutableArray alloc] init];
+    mArrStardust = [[NSMutableArray alloc] init];
+    mArrEvolutions = [[NSMutableArray alloc] init];
     
     [self initBaseData];
     
@@ -39,22 +39,21 @@
     NSString *strDataPath = [[NSBundle mainBundle] pathForResource:@"pokemon" ofType:@"plist"];
     NSMutableDictionary *dicData = [[NSMutableDictionary alloc] initWithContentsOfFile:strDataPath];
     
-    arrEvolutions = [dicData objectForKey:@"evolutions"];
-    arrBaseStats = [dicData objectForKey:@"baseStats"];
+    mArrBaseData = [dicData objectForKey:@"baseData"];
     
     NSMutableArray *arrTmpPokemons = [[NSMutableArray alloc] init];
-    for (NSMutableDictionary *dicBaseStats in arrBaseStats) {
+    for (NSMutableDictionary *dicBaseStats in mArrBaseData) {
         [arrTmpPokemons addObject:[dicBaseStats valueForKey:@"pokemon"]];
     }
     
-    arrPokemons = [arrTmpPokemons sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    mArrPokemons = [arrTmpPokemons sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
     
     NSMutableArray *arrLevelsByStardust = [dicData objectForKey:@"levelsByStardust"];
     
     for (NSMutableDictionary *dic in arrLevelsByStardust) {
         
-        [arrLevels addObject:[dic valueForKey:@"level"]];
-        [arrStardust addObject:[dic valueForKey:@"stardust"]];
+        [mArrLevels addObject:[dic valueForKey:@"level"]];
+        [mArrStardust addObject:[dic valueForKey:@"stardust"]];
     }
     
 }
@@ -104,11 +103,11 @@
     
     [self hideKeyboard];
     
-    [ActionSheetStringPicker showPickerWithTitle:@"Pokemon" rows:arrPokemons initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+    [ActionSheetStringPicker showPickerWithTitle:@"Pokemon" rows:mArrPokemons initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
         
-        for (NSMutableDictionary *dicData in arrBaseStats) {
+        for (NSMutableDictionary *dicData in mArrBaseData) {
             NSString *strPokemon = [dicData valueForKey:@"pokemon"];
-            if ([strPokemon isEqualToString:arrPokemons[selectedIndex]]) {
+            if ([strPokemon isEqualToString:mArrPokemons[selectedIndex]]) {
                 NSString *strAttack = [dicData valueForKey:@"attack"];
                 NSString *strDefense = [dicData valueForKey:@"defense"];
                 NSString *strStamina = [dicData valueForKey:@"stamina"];
@@ -131,10 +130,10 @@
     
     [self hideKeyboard];
     
-    [ActionSheetStringPicker showPickerWithTitle:@"Dust Price" rows:arrStardust initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
-        NSString *strDustPrice = arrStardust[selectedIndex];
+    [ActionSheetStringPicker showPickerWithTitle:@"Dust Price" rows:mArrStardust initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
+        NSString *strDustPrice = mArrStardust[selectedIndex];
         self.txtDustPrice.text = strDustPrice;
-        self.txtLVL.text = arrLevels[selectedIndex];
+        self.txtLVL.text = mArrLevels[selectedIndex];
         
     } cancelBlock:^(ActionSheetStringPicker *picker) {
         
@@ -142,55 +141,66 @@
                      
 }
 
-- (IBAction)onCalc:(id)sender {
+- (IBAction)onCalc:(id)sender
+{
+    NSString *strPokemonName = self.txtPokemon.text;
     NSString *strCP = self.txtCP.text;
-    if ([strCP isEqual:@""]) {
+    
+    if ([strPokemonName isEqualToString:@""])
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"Please select pokemon name." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [alertView show];
+        return;
+    }
+    
+    if ([strCP isEqual:@""])
+    {
         UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"" message:@"Please input CP." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [alertView show];
         return;
     }
     int cp = [strCP intValue];
     
-    for (NSMutableDictionary *dicEvolution in arrEvolutions) {
-        NSString *strPokemonName = [dicEvolution valueForKey:@"pokemon"];
-        if ([strPokemonName isEqualToString:self.txtPokemon.text]) {
-            NSDictionary *dicYellowEvolution = [dicEvolution objectForKey:@"yellowEvolution"];
-            if (dicYellowEvolution)
-            {
-                NSString *strYellowName = [dicYellowEvolution valueForKey:@"name"];
-                float multiplierMin = [[dicYellowEvolution valueForKey:@"min"] floatValue];
-                float multiplierMax = [[dicYellowEvolution valueForKey:@"max"] floatValue];
-                int yellowRangeMin = cp * multiplierMin;
-                int yellowRangeMax = cp * multiplierMax;
-                NSString *strYellowRange = [NSString stringWithFormat:@"%d~%d", yellowRangeMin, yellowRangeMax];
-                
-                self.lblEvolutionName1.text = strYellowName;
-                self.txtEvolutionRange1.text = strYellowRange;
-                
-            }
-            NSDictionary *dicRedEvolution = [dicEvolution objectForKey:@"redEvolution"];
-            if (dicRedEvolution)
-            {
-                NSString *strRedName = [dicRedEvolution valueForKey:@"name"];
-                float multiplierMin = [[dicRedEvolution valueForKey:@"min"] floatValue];
-                float multiplierMax = [[dicRedEvolution valueForKey:@"max"] floatValue];
-                int redRangeMin = cp * multiplierMin;
-                int redRangeMax = cp * multiplierMax;
-                NSString *strRedRange = [NSString stringWithFormat:@"%d~%d", redRangeMin, redRangeMax];
-                
-                self.lblEvolutionName2.text = strRedName;
-                self.txtEvolutionRange2.text = strRedRange;
-                
-            }
-            
-            
-        }
-    }
-    
-    
-    
+    [self calculatorEvolution:strPokemonName min:cp max:cp];
     
 }
+
+-(void)calculatorEvolution:(NSString*)strPokemonName min:(int)minValue max:(int)maxValue
+{
+    for (NSMutableDictionary *dicData in mArrBaseData) {
+        if ([strPokemonName isEqualToString:[dicData valueForKey:@"pokemon"]])
+        {
+            NSMutableArray *arrEvolutions = [dicData objectForKey:@"evolutions"];
+            if (arrEvolutions) {
+                for (NSMutableDictionary *dicEvolution in arrEvolutions)
+                {
+                    NSString *strEvolutionName = [dicEvolution valueForKey:@"name"];
+                    float multiplierMin = [[dicEvolution valueForKey:@"min"] floatValue];
+                    float multiplierMax = [[dicEvolution valueForKey:@"max"] floatValue];
+                    int evolutionMin = minValue * multiplierMin;
+                    int evolutionMax = maxValue * multiplierMax;
+                    NSString *strEvolutionRange = [NSString stringWithFormat:@"%d~%d", evolutionMin, evolutionMax];
+                    
+                    NSMutableDictionary *dicTemp = [[NSMutableDictionary alloc] init];
+                    [dicTemp setValue:strEvolutionName forKey:@"name"];
+                    [dicTemp setValue:strEvolutionRange forKey:@"range"];
+                    [mArrEvolutions addObject:dicTemp];
+                    
+                    [self calculatorEvolution:strEvolutionName min:evolutionMin max:evolutionMax];
+                }
+            }
+            else
+            {
+                return;
+            }
+            
+            
+            break;
+        }
+    }
+}
+
+
 
 -(void)hideKeyboard
 {

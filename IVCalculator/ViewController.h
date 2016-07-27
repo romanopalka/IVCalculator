@@ -12,12 +12,12 @@
 {
     
 }
-@property (strong, nonatomic) NSMutableArray *arrBaseStats;
-@property (strong, nonatomic) NSArray *arrPokemons;
-@property (strong, nonatomic) NSMutableArray *arrLevels;
-@property (strong, nonatomic) NSMutableArray *arrStardust;
-@property (strong, nonatomic) NSMutableArray *arrEvolutions;
 
+@property (strong, nonatomic) NSMutableArray *mArrBaseData;
+@property (strong, nonatomic) NSArray *mArrPokemons;
+@property (strong, nonatomic) NSMutableArray *mArrLevels;
+@property (strong, nonatomic) NSMutableArray *mArrStardust;
+@property (strong, nonatomic) NSMutableArray *mArrEvolutions;
 
 @property (strong, nonatomic) IBOutlet UITextField *txtPokemon;
 @property (strong, nonatomic) IBOutlet UITextField *txtCP;
