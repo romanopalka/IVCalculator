@@ -309,12 +309,12 @@
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 </variation>
                                                                             </label>
-                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zmu-hX-28U">
+                                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300~359" borderStyle="roundedRect" textAlignment="center" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zmu-hX-28U">
                                                                                 <rect key="frame" x="110" y="4" width="65" height="30"/>
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <variation key="heightClass=regular-widthClass=compact">
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                                 </variation>
                                                                             </textField>
                                                                         </subviews>
@@ -371,7 +371,7 @@
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <variation key="heightClass=regular-widthClass=compact">
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                                 </variation>
                                                                             </textField>
                                                                         </subviews>
@@ -428,7 +428,7 @@
                                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                                 <textInputTraits key="textInputTraits"/>
                                                                                 <variation key="heightClass=regular-widthClass=compact">
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                                                                 </variation>
                                                                             </textField>
                                                                         </subviews>

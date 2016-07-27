@@ -106,7 +106,8 @@
     
     [ActionSheetStringPicker showPickerWithTitle:@"Pokemon" rows:mArrPokemons initialSelection:0 doneBlock:^(ActionSheetStringPicker *picker, NSInteger selectedIndex, id selectedValue) {
         
-        for (NSMutableDictionary *dicData in mArrBaseData) {
+        for (NSMutableDictionary *dicData in mArrBaseData)
+        {
             NSString *strPokemon = [dicData valueForKey:@"pokemon"];
             if ([strPokemon isEqualToString:mArrPokemons[selectedIndex]])
             {
