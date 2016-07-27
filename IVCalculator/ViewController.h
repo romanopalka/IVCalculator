@@ -31,15 +31,18 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtATT;
 @property (strong, nonatomic) IBOutlet UITextField *txtDEF;
 
+
+@property (strong, nonatomic) IBOutlet UIView *firstEvolutionView;
 @property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName1;
-@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName2;
-@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName3;
-
 @property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange1;
+
+@property (strong, nonatomic) IBOutlet UIView *secondEvolutionView;
+@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName2;
 @property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange2;
+
+@property (strong, nonatomic) IBOutlet UIView *thirdEvolutionView;
+@property (strong, nonatomic) IBOutlet UILabel *lblEvolutionName3;
 @property (strong, nonatomic) IBOutlet UITextField *txtEvolutionRange3;
-
-
 
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;

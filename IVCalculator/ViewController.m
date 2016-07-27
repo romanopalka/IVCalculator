@@ -30,6 +30,7 @@
     mArrStardust = [[NSMutableArray alloc] init];
     mArrEvolutions = [[NSMutableArray alloc] init];
     
+    [self hideEvolutions];
     [self initBaseData];
     
 }
@@ -107,7 +108,8 @@
         
         for (NSMutableDictionary *dicData in mArrBaseData) {
             NSString *strPokemon = [dicData valueForKey:@"pokemon"];
-            if ([strPokemon isEqualToString:mArrPokemons[selectedIndex]]) {
+            if ([strPokemon isEqualToString:mArrPokemons[selectedIndex]])
+            {
                 NSString *strAttack = [dicData valueForKey:@"attack"];
                 NSString *strDefense = [dicData valueForKey:@"defense"];
                 NSString *strStamina = [dicData valueForKey:@"stamina"];
@@ -116,6 +118,10 @@
                 self.txtSTA.text = strStamina;
                 self.txtATT.text = strAttack;
                 self.txtDEF.text = strDefense;
+                
+                self.txtCP.text = @"0";
+                self.txtHP.text = @"0";
+                [self hideEvolutions];
                 
                 break;
             }
@@ -161,8 +167,59 @@
     }
     int cp = [strCP intValue];
     
+    [mArrEvolutions removeAllObjects];
     [self calculatorEvolution:strPokemonName min:cp max:cp];
     
+    if ([mArrEvolutions count] > 0) {
+        [self showEvolutions];
+    }
+    
+}
+
+-(void)showEvolutions
+{
+    
+    for (int i = 0; i < mArrEvolutions.count; i++)
+    {
+        NSMutableDictionary *dicData = mArrEvolutions[i];
+        NSString *strEvolutionName = [dicData valueForKey:@"name"];
+        NSString *strEvolutionRange = [dicData valueForKey:@"range"];
+        
+        switch (i) {
+            case 0:
+                self.lblEvolutionName1.text = strEvolutionName;
+                self.txtEvolutionRange1.text = strEvolutionRange;
+                break;
+            case 1:
+                [self.secondEvolutionView setHidden:NO];
+                self.lblEvolutionName2.text = strEvolutionName;
+                self.txtEvolutionRange2.text = strEvolutionRange;
+                break;
+            case 2:
+                [self.thirdEvolutionView setHidden:NO];
+                self.lblEvolutionName3.text = strEvolutionName;
+                self.txtEvolutionRange3.text = strEvolutionRange;
+                break;
+                
+            default:
+                break;
+        }
+        
+    }
+}
+
+-(void)hideEvolutions
+{
+    self.lblEvolutionName1.text = @"";
+    self.lblEvolutionName2.text = @"";
+    self.lblEvolutionName3.text = @"";
+    
+    self.txtEvolutionRange1.text = @"";
+    self.txtEvolutionRange2.text = @"";
+    self.txtEvolutionRange3.text = @"";
+    
+    [self.secondEvolutionView setHidden:YES];
+    [self.thirdEvolutionView setHidden:YES];
 }
 
 -(void)calculatorEvolution:(NSString*)strPokemonName min:(int)minValue max:(int)maxValue
