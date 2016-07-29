@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300F57A01D4B047B009CF57E /* PokemonT.m in Sources */ = {isa = PBXBuildFile; fileRef = 300F579F1D4B047B009CF57E /* PokemonT.m */; };
 		3024F5D11D459CBB009CC9A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3024F5D01D459CBB009CC9A0 /* main.m */; };
 		3024F5D41D459CBB009CC9A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3024F5D31D459CBB009CC9A0 /* AppDelegate.m */; };
 		3024F5D71D459CBB009CC9A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3024F5D61D459CBB009CC9A0 /* ViewController.m */; };
@@ -21,6 +22,8 @@
 
 /* Begin PBXFileReference section */
 		12B04916032E4719EF3AE5E7 /* libPods-IVCalculator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IVCalculator.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		300F579E1D4B047B009CF57E /* PokemonT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonT.h; sourceTree = "<group>"; };
+		300F579F1D4B047B009CF57E /* PokemonT.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonT.m; sourceTree = "<group>"; };
 		3024F5CC1D459CBB009CC9A0 /* IVCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IVCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3024F5D01D459CBB009CC9A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3024F5D21D459CBB009CC9A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 				3024F5DB1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld */,
 				3024F5CF1D459CBB009CC9A0 /* Supporting Files */,
 				3024F5E91D45AFFB009CC9A0 /* pokemon.plist */,
+				300F579E1D4B047B009CF57E /* PokemonT.h */,
+				300F579F1D4B047B009CF57E /* PokemonT.m */,
 			);
 			path = IVCalculator;
 			sourceTree = "<group>";
@@ -236,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300F57A01D4B047B009CF57E /* PokemonT.m in Sources */,
 				3024F5D71D459CBB009CC9A0 /* ViewController.m in Sources */,
 				3024F5D41D459CBB009CC9A0 /* AppDelegate.m in Sources */,
 				3024F5DD1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld in Sources */,

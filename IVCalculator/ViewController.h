@@ -10,7 +10,10 @@
 
 @interface ViewController : UIViewController <UITextFieldDelegate>
 {
-    
+    int attack;
+    int defense;
+    int stamina;
+    float mLevel;
 }
 
 @property (strong, nonatomic) NSMutableArray *mArrBaseData;
@@ -24,12 +27,9 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtHP;
 @property (strong, nonatomic) IBOutlet UITextField *txtDustPrice;
 
-@property (strong, nonatomic) IBOutlet UITextField *txtPerfectCP;
-@property (strong, nonatomic) IBOutlet UITextField *txtPerfectHP;
-@property (strong, nonatomic) IBOutlet UITextField *txtLVL;
-@property (strong, nonatomic) IBOutlet UITextField *txtSTA;
-@property (strong, nonatomic) IBOutlet UITextField *txtATT;
-@property (strong, nonatomic) IBOutlet UITextField *txtDEF;
+@property (strong, nonatomic) IBOutlet UITextField *txtPercentPerfect;
+@property (strong, nonatomic) IBOutlet UIView *messageView;
+@property (strong, nonatomic) IBOutlet UILabel *lblMessage;
 
 
 @property (strong, nonatomic) IBOutlet UIView *firstEvolutionView;
@@ -47,6 +47,7 @@
 
 @property (strong, nonatomic) IBOutlet NSLayoutConstraint *bottomConstraint;
 
+@property (strong, nonatomic) IBOutlet UIButton *btnCalc;
 
 - (IBAction)onPokemon:(id)sender;
 - (IBAction)onDustPrice:(id)sender;
