@@ -16,6 +16,7 @@
 		3024F5DF1D459CBB009CC9A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5DE1D459CBB009CC9A0 /* Assets.xcassets */; };
 		3024F5E21D459CBB009CC9A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5E01D459CBB009CC9A0 /* LaunchScreen.storyboard */; };
 		3024F5EA1D45AFFB009CC9A0 /* pokemon.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3024F5E91D45AFFB009CC9A0 /* pokemon.plist */; };
+		304F4F911D4BEBF000CFA120 /* PokemonTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 304F4F901D4BEBF000CFA120 /* PokemonTableCell.m */; };
 		30EA2C021D45C65D00878C53 /* dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 30EA2C011D45C65D00878C53 /* dropdown.png */; };
 		464A3914BA0B757F210F2C69 /* libPods-IVCalculator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B04916032E4719EF3AE5E7 /* libPods-IVCalculator.a */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,8 @@
 		3024F5E11D459CBB009CC9A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3024F5E31D459CBB009CC9A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3024F5E91D45AFFB009CC9A0 /* pokemon.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = pokemon.plist; sourceTree = "<group>"; };
+		304F4F8F1D4BEBF000CFA120 /* PokemonTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PokemonTableCell.h; sourceTree = "<group>"; };
+		304F4F901D4BEBF000CFA120 /* PokemonTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PokemonTableCell.m; sourceTree = "<group>"; };
 		30EA2C011D45C65D00878C53 /* dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dropdown.png; sourceTree = "<group>"; };
 		53AFFB0D01C9712DA2D919B8 /* Pods-IVCalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVCalculator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		7B62D7440CED4979916DA0FA /* Pods-IVCalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IVCalculator.release.xcconfig"; path = "Pods/Target Support Files/Pods-IVCalculator/Pods-IVCalculator.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				3024F5E91D45AFFB009CC9A0 /* pokemon.plist */,
 				300F579E1D4B047B009CF57E /* PokemonT.h */,
 				300F579F1D4B047B009CF57E /* PokemonT.m */,
+				304F4F8F1D4BEBF000CFA120 /* PokemonTableCell.h */,
+				304F4F901D4BEBF000CFA120 /* PokemonTableCell.m */,
 			);
 			path = IVCalculator;
 			sourceTree = "<group>";
@@ -243,6 +248,7 @@
 			files = (
 				300F57A01D4B047B009CF57E /* PokemonT.m in Sources */,
 				3024F5D71D459CBB009CC9A0 /* ViewController.m in Sources */,
+				304F4F911D4BEBF000CFA120 /* PokemonTableCell.m in Sources */,
 				3024F5D41D459CBB009CC9A0 /* AppDelegate.m in Sources */,
 				3024F5DD1D459CBB009CC9A0 /* IVCalculator.xcdatamodeld in Sources */,
 				3024F5D11D459CBB009CC9A0 /* main.m in Sources */,

@@ -34,6 +34,4 @@
 
 -(BOOL)setLevel:(float)level;
 
--(float)round:(float)x places:(int)places;
-
 @end
