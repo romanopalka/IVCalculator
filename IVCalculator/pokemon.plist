@@ -1252,6 +1252,17 @@
 			<string>54</string>
 			<key>stamina</key>
 			<string>230</string>
+			<key>evolutions</key>
+			<array>
+				<dict>
+					<key>name</key>
+					<string>Wigglytuff</string>
+					<key>min</key>
+					<real>2.41</real>
+					<key>max</key>
+					<real>2.47</real>
+				</dict>
+			</array>
 		</dict>
 		<dict>
 			<key>pokemon</key>
